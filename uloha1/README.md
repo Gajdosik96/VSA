@@ -37,19 +37,21 @@ Hoci názov tovaru neslúži ako klúč do tabuľky, chceme tiež aby bol jedine
 
 **Odporúčania a návody:** 
 •	Ukážka čítania parsovania csv-súboru:
-	**String line;
+	`String line;
 	BufferedReader br = new BufferedReader(new FileReader(filename));
 while ((line = br.readLine()) != null) {
-			String s[] = line.split(“;”);**
-                ...
+			String s[] = line.split(";");`
+            
+	    
 •	Pre odstránenie prázdnych znakov použite reťazcovú metódu **str.trim().**
 •	Pre konverziu reťazca na hodnotu double použite: 
 **double d = Double.parseDouble(str);**
 •	pre kontrolu duplicitných tovarov môžete použiť napr. kontainer java.util.set.
 •	pre otestovanie funkčnosti môžete použit funkciu main:
-    	**public static void main(String[] args) throws IOException {
+`    	
+public static void main(String[] args) throws IOException {
         	load("/home/data.csv");
-    	}**
+    	}`
 Vzorový csv-súbor data.csv  pre otestovanie je pripojený k zadaniu.
 
 
