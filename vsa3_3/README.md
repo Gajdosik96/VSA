@@ -1,6 +1,6 @@
 # Swing DB aplikácia
 
-Súbory **Cv3swingapp.java** a **Person.java** nájdete zdrojový kód java-swing-aplikácie, ktorá umožňuje editovať zoznam osôb. 
+V súboroch [Cv3swingapp.java](https://github.com/xchovanecv1/VSA/blob/master/vsa3_3/Cv3swingapp.java) a [Person.java](https://github.com/xchovanecv1/VSA/blob/master/vsa3_3/Person.java) nájdete zdrojový kód java-swing-aplikácie, ktorá umožňuje editovať zoznam osôb. 
 Údaje zadané užívateľom sú uchovávané v len pamäti, po ukončení aplikácie sú stratené
 
 ## Úlohy
