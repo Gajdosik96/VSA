@@ -115,3 +115,28 @@ pre prvú inštanciu zavolajte em.persist
 - [x] zopakujte volanie em.find s tým istým klúčom.
 
 - [x] Overte si či tieto dve volania vrátili ten istý objekt alebo dva rôzne objekty.
+
+# JPA kontroler
+**Pozn.** JPA-kontroler predstavuje nadstavbu nad entity managerom, ktorá ďalej zjednodušuje prácu s databázou.
+
+pomocou netbeans wizardu **new.other.persitance.JPA Controller Classes from Entity Classes** vytvorte JPA-kontroler (data access object) pre entitu **Osoba**.
+
+Nasledujúci program ilustruje použitie JPA-kontrolera pre vytvorenie novej osoby v databáze
+```java
+public static void main(String[] args) throws Exception{
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Cv3PU");
+        OsobaJpaController dao = new OsobaJpaController(emf);
+        
+        Osoba p = new Osoba(1L,"Pipi");
+        dao.create(p);
+    }        
+```
+spustite program a overte si jeho funkčnosť. (table generation strategy si nastavte opäť na **'drop and create**)
+
+Modifikujte si program a oboznámte sa funkcionalitou ďalších metód JPA-kontrolera
+- [ ] edit
+- [ ] destroy
+- [ ] find*
+- [ ] getOsobaCount
+- [ ] Pozrite si vygenerovaný kód JPA-kontrolera. Implementácia jeho metód ilustruje správne používanie entity managera.
+
