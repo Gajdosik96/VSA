@@ -32,7 +32,7 @@ Zopakujte Úlohu 2, pričom však
 ## Úloha 4.
 ![ER Diagram](https://github.com/xchovanecv1/VSA/blob/master/Cvicenie%204/ERdiagram.png?raw=true)
 
-Na obrázku je ER diagram zobrazujúci riešenie teoretickej úlohy z 2.cvičenia. ERdiagram.png
+Na obrázku je ER diagram zobrazujúci riešenie teoretickej úlohy z 2.cvičenia.
 
 * Navrhnite entitné triedy odpovedajúce tomuto ER diagramu. (t.j. JPA by z entitných tried mal automaticky vygenerovať tabuľky tak ako sú zobrazené na diagrame)
 
