@@ -30,16 +30,16 @@ Pre UML diagram tried znázornených na obrázku:
 
 Implemntujte entitnú triedu **Dokument** ako kompozíciu podľa UML diagramu tried:
 
-- [ ] Dokument okrem názvu a vlastného textu môže obsahovať podkapitoly
-- [ ] Podkapitola je tiež dokument a môže teda obsahovať daľšie vlastné podkapitoly.
-- [ ] Z dokumentu je možné navigovať (má referencie) na jeho podkapitoly, tak ako znázorňuje asociácia na diagrame.
-- [ ] Asociácia podkapitoly je kompozícia, je teda potrebné zabezpečiť, že pri odstánení odkazu na podkapitolu z dokumentu bude podkapitola úplne odstránená z databázy spolu s jej všetkými podkapitolami. (JPA poskytuje na implementáciu tejto funkcionality vhodné argumenty anotácií, použite ich)
+- [x] Dokument okrem názvu a vlastného textu môže obsahovať podkapitoly
+- [x] Podkapitola je tiež dokument a môže teda obsahovať daľšie vlastné podkapitoly.
+- [x] Z dokumentu je možné navigovať (má referencie) na jeho podkapitoly, tak ako znázorňuje asociácia na diagrame.
+- [x] Asociácia podkapitoly je kompozícia, je teda potrebné zabezpečiť, že pri odstánení odkazu na podkapitolu z dokumentu bude podkapitola úplne odstránená z databázy spolu s jej všetkými podkapitolami. (JPA poskytuje na implementáciu tejto funkcionality vhodné argumenty anotácií, použite ich)
 
 Pre otestovanie funkcionality implementujte program, ktorý:
 
-- [ ] Vytvorí dokument, pridá mu niekoľko podkapitol.
-- [ ] Prvej podkapitole pridá daľšie podkapitoly (na druhej úrovni).
-- [ ] všetky vytvorené objekty uloží do datbázy (naraz, v rámci jednej transakcie)
-- [ ] nasledne načíta dokument opäť z databázy, odstráni z neho prvú kapitolu a aktualizuje stav v databáze.
+- [x] Vytvorí dokument, pridá mu niekoľko podkapitol.
+- [x] Prvej podkapitole pridá daľšie podkapitoly (na druhej úrovni).
+- [x] všetky vytvorené objekty uloží do datbázy (naraz, v rámci jednej transakcie)
+- [x] nasledne načíta dokument opäť z databázy, odstráni z neho prvú kapitolu a aktualizuje stav v databáze.
 ## Úloha 4:
 Modifikujte a otestujte triedu Dokument z Úlohy 1. tak, že asociácia podkapitoly bude obojsmerná, t.j. okrem referencií na vlastné podkapitoly, bude mať dokument aj opačnú referenciu na dokument, v ktorom sa nachádza.
