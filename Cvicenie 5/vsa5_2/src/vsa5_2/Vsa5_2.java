@@ -25,7 +25,30 @@ public class Vsa5_2 {
     //    create();
         // UPOZORNENIE, Create a Read nemoze byt v jednom behu programu, pretoze to potom cache-uje veci a nefachci to
         // Najskr vytvorit tabulky, potom s nimi pracovat!
-        read("os3");
+        //read("os3");
+        
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("vsa5_2PU");
+        EntityManager em = emf.createEntityManager();
+        Osoba o = em.find(Osoba.class, 103L);
+        if(o != null)
+        {
+            release(o);
+        }
+        em.close();
+    }
+    
+    public static void release(Osoba o)
+    { 
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("vsa5_2PU");
+        EntityManager em = emf.createEntityManager();
+        Osoba fnd = em.find(Osoba.class, o.getId());
+        if(fnd != null)
+        {
+            em.getTransaction().begin();
+            em.remove(fnd);
+            em.getTransaction().commit();
+        }
+        em.close();
     }
     
     public static void read(String meno)

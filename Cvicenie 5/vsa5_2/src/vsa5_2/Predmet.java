@@ -33,10 +33,10 @@ public class Predmet implements Serializable {
     private String nazov;
     private int kredity;
     
-    @ManyToOne(cascade=CascadeType.PERSIST)
+    @ManyToOne(cascade=CascadeType.REMOVE)
     private Osoba prednasajuci;
     
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.REMOVE)
     @JoinTable( name = "PREDMET_CVICIACI",
                 joinColumns = @JoinColumn(name = "cvicenie"),
                 inverseJoinColumns = @JoinColumn(name = "osoba"))

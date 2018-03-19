@@ -42,7 +42,7 @@ public class Osoba implements Serializable {
     @OneToMany(cascade=CascadeType.PERSIST, mappedBy="prednasajuci")
     private List<Predmet> prednasky;
     
-    @ManyToMany(mappedBy = "cviciaci")
+    @ManyToMany(mappedBy = "cviciaci",cascade=CascadeType.PERSIST)
     private List<Predmet> cvicenia  = new ArrayList<>();
 
     public String getMeno() {
