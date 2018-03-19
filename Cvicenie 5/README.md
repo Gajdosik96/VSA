@@ -22,7 +22,7 @@ Pre UML diagram tried znázornených na obrázku:
   - Tretia osoba bude cvičiť 1. aj 2. predmet
 - [x] implementujte funkciu void **read(String meno)**, ktorá dostane meno učiteľa, nájde všetky predmety, ktoré učiteľ cvičí a na obrazovku vypíše ich názvov a meno prednášajúceho.
 
-- [ ] implementujte funkciu void **release(Osoba o)**, ktorá dostane ako parameter osobu, zistí či taká osoba je v DB, ak áno odstráni ju, pričom odstráni aj všetky odkazy na ňu, t.j. nesmie ostať už ani prednášajúcim ani cvičiacim, žiadneho predmetu.
+- [x] implementujte funkciu void **release(Osoba o)**, ktorá dostane ako parameter osobu, zistí či taká osoba je v DB, ak áno odstráni ju, pričom odstráni aj všetky odkazy na ňu, t.j. nesmie ostať už ani prednášajúcim ani cvičiacim, žiadneho predmetu.
 
 ## Kompozícia
 ## Úloha 3:
