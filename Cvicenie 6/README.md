@@ -50,6 +50,7 @@ Modifikujte úlohu 1, tak že tabulky OSOBA a KONTAKT namapujete do jednej entit
   - prijatZamestnanca(long id, String meno) vytvorí nového zamestnanca
   - aktualizovatZamestnanca(Zamestnanec z) aktualizuje údaje o zamestnancovi
   - prepustitZamestnanca(Zamestnanec z) prepusti zamestnanca
+
 **Dôležité:** V historizovanej tabuľke sa nikdy záznamy nevymazávajú ani nemodifikujú, len vkladajú. To značí, že:
 - Funkcia **aktualizovatZamestnanca** musí namieto UPDATE volať INSERT, ktorý pridá nový záznam s aktualizovanými údajmi do tabuľky ZAMESTNANEC. Kľúčový stĺpec OD bude obsahovať timestamp okamihu, keď nastáva zmena (použite new Date())
 - Funkciu **prepustitZamestnanca** môžeme implementovať ako špeciálny prípad aktualizovatZamestnanca, pričom hodnoty zo stĺpcov MENO, PLAT a ZARADENIE vymažeme.
